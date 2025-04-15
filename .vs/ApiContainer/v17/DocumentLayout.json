@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Labs\\ApiContainer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B50687E2-AEC5-4009-89BE-89A907DE0BE6}|ApiContainer\\ApiContainer.csproj|d:\\labs\\apicontainer\\apicontainer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B50687E2-AEC5-4009-89BE-89A907DE0BE6}|ApiContainer\\ApiContainer.csproj|solutionrelative:apicontainer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Labs\\ApiContainer\\ApiContainer\\Dockerfile",
+              "RelativeDocumentMoniker": "ApiContainer\\Dockerfile",
+              "ToolTip": "D:\\Labs\\ApiContainer\\ApiContainer\\Dockerfile",
+              "RelativeToolTip": "ApiContainer\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T06:22:27.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
