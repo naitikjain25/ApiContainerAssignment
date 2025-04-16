@@ -3,12 +3,12 @@ pipeline {
 
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal' // Must be configured in Jenkins credentials
-        ACR_NAME = "acraryan01"
-        ACR_LOGIN_SERVER = "acraryan01.azurecr.io"
-        IMAGE_NAME = "mywebapiaryan"
+        ACR_NAME = "acrnaitik0564571"
+        ACR_LOGIN_SERVER = "acrnaitik0564571.azurecr.io"
+        IMAGE_NAME = "mywebapinaitik"
         TAG = "v1"
         RESOURCE_GROUP = "rg-jenkins"
-        AKS_CLUSTER_NAME = "aksaryan01"
+        AKS_CLUSTER_NAME = "aksnaitik7563701"
     }
 
     stages {
