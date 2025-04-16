@@ -29,4 +29,4 @@ spec:
     app: dotnetapi
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 8080  # <- Clean, no weird characters
