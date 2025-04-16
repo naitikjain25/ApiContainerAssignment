@@ -13,11 +13,10 @@ pipeline {
 
     stages {
         stage('Checkout') {
-    steps {
-        git branch: 'main', url: 'https://github.com/naitikjain25/ApiContainerAssignment.git'
-    }
-}
-
+            steps {
+                git branch: 'main', url: 'https://github.com/naitikjain25/ApiContainerAssignment.git'
+            }
+        }
 
         stage('Azure Login') {
             steps {
@@ -44,39 +43,3 @@ pipeline {
                 }
             }
         }
-
-        stage('Docker Build & Push') {
-            steps {
-                bat """
-                    az acr login --name %ACR_NAME%
-                    docker build -t %ACR_LOGIN_SERVER%/%IMAGE_NAME%:%TAG% .
-                    docker push %ACR_LOGIN_SERVER%/%IMAGE_NAME%:%TAG%
-                """
-            }
-        }
-
-        stage('AKS Authentication') {
-            steps {
-                bat """
-                    az aks get-credentials --resource-group %RESOURCE_GROUP% --name %AKS_CLUSTER_NAME% --overwrite-existing
-                """
-            }
-        }
-
-        stage('Deploy to AKS') {
-            steps {
-                bat 'kubectl apply -f deployment.yml'
-                
-            }
-        }
-    }
-
-    post {
-        failure {
-            echo "❌ Build failed."
-        }
-        success {
-            echo "✅ Application deployed successfully to AKS!"
-        }
-    }
-}
